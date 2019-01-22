@@ -7,6 +7,18 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+.container {
+        width: 100%;
+        max-width: 1200px;
+        margin: auto;
+    
+}
+
+.row {
+    display: flex;
+    
+}
+
 header { 
     max-width: 100%;
     min-height: 40px;
@@ -58,20 +70,127 @@ header {
 .hero {
     max-width: 100%;
     min-height: 400px;
-    background-image: url(/images/hero.jpg);
+    background-image: url('../images/hero.jpg');
     background-size: cover;
     background-position: center;
 }
 
 .slogan {
-    text-align: center;
-    padding-top: 100px; 
+    
+    .content-slogan {
+        text-align: center;
+        padding-top: 100px;
+        > h1 {
+            color: #fff;
+            font-size: 50px;
+            text-transform: uppercase;
+            font-weight: bolder;
+            text-shadow: 1px 1px darkgrey;
+            line-height: 1px;
+
+        }
+        > h2 {
+            color: orange;
+            font-size: 50px;
+            text-transform: uppercase;
+            font-weight: bolder;
+            text-shadow: 1px 1px darkgrey;
+            line-height: 1px;
+
+        }
+        p {
+            color: #fff;
+            font-size: 20px;
+            text-transform: uppercase;
+            font-weight: bold;
+            text-shadow: 1px 1px darkgrey;
+        
+        }
+       
+    }
+}
+
+button {
+    padding: 15px 40px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+    background-color: orange;
+    border: none;
+    text-transform: uppercase;
+    border-radius: 25px;
+    margin-top: 10px;
+    &:hover{
+        background-color: darkorange;
+       
+    }
+}
+ //section about
+.about {
+    .header-about {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        > h1 {
+            text-transform: uppercase;
+            font-size: 40px;
+            margin-bottom: 0;
+            margin-top: 50px;
+        
+        }
+        > p {
+            text-transform: uppercase;
+            font-size: 20px;
+            font-weight: bold;
+            opacity: 0.4;
+            text-shadow: 1px 1px grey;
+            margin-bottom: 50px;
+        }
+    }
+    .paragraph-about {
+        > p {
+            line-height: 1.5;
+            text-align: left;
+        
+        }
+       
+    }
+
+}
+
+@media (min-width: 768px) {
+    /* For desktop: */
+    .col-m-1 {width: 8.33%;}
+    .col-m-2 {width: 16.66%;}
+    .col-m-3 {width: 25%;}
+    .col-m-4 {width: 33.33%;}
+    .col-m-5 {width: 41.66%;}
+    .col-m-6 {width: 50%;}
+    .col-m-7 {width: 58.33%;}
+    .col-m-8 {width: 66.66%;}
+    .col-m-9 {width: 75%;}
+    .col-m-10 {width: 83.33%;}
+    .col-m-11 {width: 91.66%;}
+    .col-m-12 {width: 100%;}
 }
 
 
-
-
 @media (max-width: 767px){
+
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+
     .row, .nav-list {
         flex-flow: column wrap;
         padding: 0;
@@ -89,6 +208,38 @@ header {
         .logo {
             text-align: center;
             margin: 0 auto
+        }
+    }
+
+    .slogan {
+    
+        .content-slogan {
+    
+            > h1, > h2 {
+                font-size: 25px;
+                
+            }
+            p {
+                font-size: 12px;
+            
+            }
+           
+        }
+    }
+
+    .about {
+        .header-about {
+            > h1 {
+                font-size: 25px
+            }
+            > p {
+                font-size: 12px;
+            }
+
+        }
+        .paragraph-about {
+            text-align: center;
+            padding: 2px;
         }
     }
 
