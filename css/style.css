@@ -1,3 +1,4 @@
+/*COLORS*/
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document ========================================================================== */
 /** 1. Correct the line height in all browsers. 2. Prevent adjustments of font size after orientation changes in iOS. */
@@ -129,63 +130,75 @@ header .main-nav .nav-list { display: -ms-flexbox; display: flex; -ms-flex-pack:
 
 header .main-nav .nav-list li { padding: 7px; }
 
-header .main-nav .nav-list a { text-decoration: none; display: block; padding: 0; color: white; text-transform: uppercase; font-size: 14px; line-height: 40px; transition: 0.2s; }
+header .main-nav .nav-list a { text-decoration: none; display: block; padding: 0; color: #ecf0f1; text-transform: uppercase; font-size: 14px; line-height: 40px; transition: 0.2s; }
 
-header .main-nav .nav-list a:hover { color: lightblue; font-size: 18px; }
+header .main-nav .nav-list a:hover { color: #dcdde1; font-size: 18px; }
 
 .hero { max-width: 100%; min-height: 400px; background-image: url("../images/hero.jpg"); background-size: cover; background-position: center; }
 
 .slogan .content-slogan { text-align: center; padding-top: 100px; }
 
-.slogan .content-slogan > h1 { color: #fff; font-size: 50px; text-transform: uppercase; font-weight: bolder; text-shadow: 1px 1px darkgrey; line-height: 1px; }
+.slogan .content-slogan > h1 { color: white-color; font-size: 50px; text-transform: uppercase; font-weight: bolder; text-shadow: 1px 1px #7f8c8d; line-height: 1px; }
 
-.slogan .content-slogan > h2 { color: orange; font-size: 50px; text-transform: uppercase; font-weight: bolder; text-shadow: 1px 1px darkgrey; line-height: 1px; }
+.slogan .content-slogan > h2 { color: #e58e26; font-size: 50px; text-transform: uppercase; font-weight: bolder; text-shadow: 1px 1px #7f8c8d; line-height: 1px; }
 
-.slogan .content-slogan p { color: #fff; font-size: 20px; text-transform: uppercase; font-weight: bold; text-shadow: 1px 1px darkgrey; }
+.slogan .content-slogan p { color: #ecf0f1; font-size: 20px; text-transform: uppercase; font-weight: bold; text-shadow: 1px 1px #7f8c8d; }
 
-button { padding: 15px 40px; color: #fff; font-size: 12px; font-weight: bold; background-color: orange; border: none; text-transform: uppercase; border-radius: 25px; margin-top: 10px; }
+button { padding: 15px 40px; color: #ecf0f1; font-size: 12px; font-weight: bold; background-color: #e58e26; border: none; text-transform: uppercase; border-radius: 25px; margin-top: 10px; }
 
-button:hover { background-color: darkorange; }
+button:hover { background-color: #d35400; }
 
 .about .header-about { display: -ms-flexbox; display: flex; -ms-flex-align: center; align-items: center; -ms-flex-direction: column; flex-direction: column; }
 
 .about .header-about > h1 { text-transform: uppercase; font-size: 40px; margin-bottom: 0; margin-top: 50px; }
 
-.about .header-about > p { text-transform: uppercase; font-size: 20px; font-weight: bold; opacity: 0.4; text-shadow: 1px 1px grey; margin-bottom: 50px; }
+.about .header-about > p { text-transform: uppercase; font-size: 20px; font-weight: bold; opacity: 0.4; text-shadow: 1px 1px #7f8c8d; margin-bottom: 50px; }
 
 .about .paragraph-about > p { line-height: 1.5; text-align: left; }
 
-.services { background-color: black; max-width: 100%; max-height: auto; background-size: cover; color: white; }
+.services { background-color: #000; max-width: 100%; max-height: auto; background-size: cover; color: #ecf0f1; }
 
 .services .header-services { display: -ms-flexbox; display: flex; -ms-flex-direction: column; flex-direction: column; -ms-flex-align: center; align-items: center; }
 
 .services .header-services > h1 { text-transform: uppercase; font-size: 40px; margin-bottom: 0; margin-top: 50px; }
 
-.services .header-services > p { text-transform: uppercase; font-size: 20px; font-weight: bold; opacity: 0.4; text-shadow: 1px 1px grey; margin-bottom: 50px; }
+.services .header-services > p { text-transform: uppercase; font-size: 20px; font-weight: bold; opacity: 0.4; text-shadow: 1px 1px #7f8c8d; margin-bottom: 50px; }
 
 .services .content-services { min-height: 250px; display: -ms-flexbox; display: flex; -ms-flex-direction: row; flex-direction: row; padding: 20px; }
 
-.services .content-services .box-services:last-child { border-right: 1px solid grey; }
+.services .content-services .box-services:last-child { border-right: 1px solid #7f8c8d; }
 
-.services .content-services .box-services { border-left: 1px solid grey; padding: 10px; }
+.services .content-services .box-services { border-left: 1px solid #7f8c8d; padding: 10px; }
 
-.services .content-services .box-services .fas, .services .content-services .box-services .far { font-size: 40px; color: orange; padding-bottom: 15px; }
+.services .content-services .box-services .fas, .services .content-services .box-services .far { font-size: 40px; color: #e58e26; padding-bottom: 15px; }
 
 .services .content-services .box-services > h2 { font-size: 25px; text-transform: uppercase; }
 
-.services .content-services .box-services > p { font-size: 14px; opacity: 0.4; text-shadow: 1px 1px grey; }
+.services .content-services .box-services > p { font-size: 14px; opacity: 0.4; text-shadow: 1px 1px #7f8c8d; }
 
 .our-projects .header-our-projects { display: -ms-flexbox; display: flex; -ms-flex-direction: column; flex-direction: column; -ms-flex-align: center; align-items: center; }
 
 .our-projects .header-our-projects > h1 { text-transform: uppercase; font-size: 40px; margin-bottom: 0; margin-top: 50px; }
 
-.our-projects .header-our-projects > p { text-transform: uppercase; font-size: 20px; font-weight: bold; opacity: 0.4; text-shadow: 1px 1px grey; margin-bottom: 50px; }
+.our-projects .header-our-projects > p { text-transform: uppercase; font-size: 20px; font-weight: bold; opacity: 0.4; text-shadow: 1px 1px #7f8c8d; margin-bottom: 50px; }
 
-.our-projects .list-our-projects { width: 80%; display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; }
+.our-projects .list-our-projects { width: 100%; display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; }
 
-.our-projects .list-our-projects > ul { display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; -ms-flex-align: center; align-items: center; list-style-type: none; }
+.our-projects .list-our-projects ul { display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; -ms-flex-align: center; align-items: center; list-style-type: none; }
 
-.our-projects .list-our-projects > li { display: -ms-flexbox; display: flex; -ms-flex-line-pack: distribute; align-content: space-around; }
+.our-projects .list-our-projects ul li:first-child { border-top-left-radius: 40%; border-bottom-left-radius: 40%; padding-left: 40px; }
+
+.our-projects .list-our-projects ul li:last-child { border-top-right-radius: 40%; border-bottom-right-radius: 40%; padding-right: 40px; }
+
+.our-projects .list-our-projects ul li { min-width: 100px; padding: 5px; border: 1px solid #7f8c8d; background-color: #dcdde1; box-shadow: 1px 1px #dcdde1; }
+
+.our-projects .list-our-projects ul li a { text-decoration: none; display: block; padding: 10px; text-transform: uppercase; font-size: 20px; line-height: 40px; transition: 0.2s; }
+
+.our-projects .list-our-projects ul li a:hover { border-bottom: 4px solid #d35400; }
+
+.our-projects .gallery { display: -ms-flexbox; display: flex; }
+
+.our-projects .gallery .foto { -o-object-fit: cover; object-fit: cover; max-height: 200px; width: 100%; padding: 5px; }
 
 @media (min-width: 768px) { /* For desktop: */
   .col-m-1 { width: 8.33%; }
@@ -230,3 +243,25 @@ button:hover { background-color: darkorange; }
   .services .content-services .box-services .fas, .services .content-services .box-services .far { font-size: 40px; }
   .services .content-services .box-services > h2 { font-size: 15px; }
   .services .content-services .box-services > p { font-size: 12px; } }
+
+.our-projects .header-our-projects > h1 { font-size: 25px; }
+
+.our-projects .header-our-projects > p { font-size: 12px; }
+
+.our-projects .list-our-projects { width: 100%; display: -ms-flexbox; display: flex; -ms-flex-direction: column; flex-direction: column; -ms-flex-pack: center; justify-content: center; }
+
+.our-projects .list-our-projects ul { display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; -ms-flex-align: center; align-items: center; list-style-type: none; }
+
+.our-projects .list-our-projects ul li:first-child { border-top-left-radius: 40%; border-bottom-left-radius: 40%; padding-left: 40px; }
+
+.our-projects .list-our-projects ul li:last-child { border-top-right-radius: 40%; border-bottom-right-radius: 40%; padding-right: 40px; }
+
+.our-projects .list-our-projects ul li { min-width: 100px; padding: 5px; border: 1px solid #7f8c8d; background-color: #dcdde1; box-shadow: 1px 1px #dcdde1; }
+
+.our-projects .list-our-projects ul li a { text-decoration: none; display: block; padding: 10px; text-transform: uppercase; font-size: 20px; line-height: 40px; transition: 0.2s; }
+
+.our-projects .list-our-projects ul li a:hover { border-bottom: 4px solid #d35400; }
+
+.our-projects .gallery { display: -ms-flexbox; display: flex; }
+
+.our-projects .gallery .foto { -o-object-fit: cover; object-fit: cover; max-height: 200px; width: 100%; padding: 5px; }

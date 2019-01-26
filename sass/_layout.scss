@@ -57,13 +57,13 @@ header {
                 text-decoration: none;
                 display: block;
                 padding: 0;
-                color: white;
+                color: $white-color;
                 text-transform: uppercase;
                 font-size: 14px;
                 line-height: 40px;
                 transition: 0.2s;
                 &:hover {
-                    color: lightblue;
+                    color: $light-grey-color;
                     font-size: 18px;
                 }
 
@@ -86,29 +86,29 @@ header {
         text-align: center;
         padding-top: 100px;
         > h1 {
-            color: #fff;
+            color: white-color;
             font-size: 50px;
             text-transform: uppercase;
             font-weight: bolder;
-            text-shadow: 1px 1px darkgrey;
+            text-shadow: 1px 1px $grey-color;
             line-height: 1px;
 
         }
         > h2 {
-            color: orange;
+            color: $carrot-color;
             font-size: 50px;
             text-transform: uppercase;
             font-weight: bolder;
-            text-shadow: 1px 1px darkgrey;
+            text-shadow: 1px 1px $grey-color;
             line-height: 1px;
 
         }
         p {
-            color: #fff;
+            color: $white-color;
             font-size: 20px;
             text-transform: uppercase;
             font-weight: bold;
-            text-shadow: 1px 1px darkgrey;
+            text-shadow: 1px 1px $grey-color;
         
         }
        
@@ -117,16 +117,16 @@ header {
 
 button {
     padding: 15px 40px;
-    color: #fff;
+    color: $white-color;
     font-size: 12px;
     font-weight: bold;
-    background-color: orange;
+    background-color: $carrot-color;
     border: none;
     text-transform: uppercase;
     border-radius: 25px;
     margin-top: 10px;
     &:hover{
-        background-color: darkorange;
+        background-color: $carrot-hover-color;
        
     }
 }
@@ -149,7 +149,7 @@ button {
             font-size: 20px;
             font-weight: bold;
             opacity: 0.4;
-            text-shadow: 1px 1px grey;
+            text-shadow: 1px 1px $grey-color;
             margin-bottom: 50px;
         }
     }
@@ -166,11 +166,11 @@ button {
 
 //section services
 .services {
-    background-color: black;
+    background-color: $black-color;
     max-width: 100%;
     max-height: auto;
     background-size: cover;
-    color: white;
+    color: $white-color;
     .header-services {
         display: flex;
         flex-direction: column;
@@ -188,7 +188,7 @@ button {
             font-size: 20px;
             font-weight: bold;
             opacity: 0.4;
-            text-shadow: 1px 1px grey;
+            text-shadow: 1px 1px $grey-color;
             margin-bottom: 50px;
 
         }
@@ -201,16 +201,16 @@ button {
 
         
         .box-services:last-child {
-            border-right: 1px solid grey;
+            border-right: 1px solid $grey-color;
 
         }
         .box-services {
-            border-left: 1px solid grey;
+            border-left: 1px solid $grey-color;
             padding: 10px;
 
             .fas, .far {
                 font-size: 40px;
-                color: orange;
+                color: $carrot-color;
                 padding-bottom: 15px;
             }
 
@@ -222,7 +222,7 @@ button {
             > p {
                 font-size: 14px;
                 opacity: 0.4;
-                text-shadow: 1px 1px grey;
+                text-shadow: 1px 1px $grey-color;
 
             }
         }
@@ -250,27 +250,66 @@ button {
             font-size: 20px;
             font-weight: bold;
             opacity: 0.4;
-            text-shadow: 1px 1px grey;
+            text-shadow: 1px 1px $grey-color;
             margin-bottom: 50px;
 
         }
     }
     .list-our-projects {
-        width: 80%;
+        width: 100%;
         display: flex;
         justify-content: center;
-
-        > ul {
+        
+        ul {
             display: flex;
             justify-content: center;
             align-items: center;
             list-style-type: none;
             
-        }
+            li:first-child {
+                border-top-left-radius: 40%;
+                border-bottom-left-radius: 40%;
+                padding-left: 40px;
 
-        > li {
-            display: flex;
-            align-content: space-around;
+            }
+            li:last-child {
+                border-top-right-radius: 40%;
+                border-bottom-right-radius: 40%;
+                padding-right: 40px;
+            }
+
+            li {
+                min-width: 100px;
+                padding: 5px;
+                border: 1px solid $grey-color;
+                background-color: $light-grey-color;
+                box-shadow: 1px 1px $light-grey-color;
+            
+                a {
+                    text-decoration: none;
+                    display: block;
+                    padding: 10px;
+                    text-transform: uppercase;
+                    font-size: 20px;
+                    line-height: 40px;
+                    transition: 0.2s;
+                    &:hover {
+                        border-bottom: 4px solid $carrot-hover-color;
+            
+                    }
+        
+                }
+            }
+        }   
+    }
+    .gallery {
+        display: flex;
+        
+        .foto {
+            object-fit: cover;
+            max-height: 200px;
+            width: 100%;
+            padding: 5px;
         }
     }
 }
@@ -406,4 +445,77 @@ button {
         }
     }
 
+}
+
+.our-projects {
+    .header-our-projects {
+       
+        > h1 {
+            font-size: 25px;
+    
+        }
+
+        > p {
+            font-size: 12px;
+          
+        }
+    }
+    .list-our-projects {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+        ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            list-style-type: none;
+            
+            li:first-child {
+                border-top-left-radius: 40%;
+                border-bottom-left-radius: 40%;
+                padding-left: 40px;
+
+            }
+            li:last-child {
+                border-top-right-radius: 40%;
+                border-bottom-right-radius: 40%;
+                padding-right: 40px;
+            }
+
+            li {
+                min-width: 100px;
+                padding: 5px;
+                border: 1px solid $grey-color;
+                background-color: $light-grey-color;
+                box-shadow: 1px 1px $light-grey-color;
+            
+                a {
+                    text-decoration: none;
+                    display: block;
+                    padding: 10px;
+                    text-transform: uppercase;
+                    font-size: 20px;
+                    line-height: 40px;
+                    transition: 0.2s;
+                    &:hover {
+                        border-bottom: 4px solid $carrot-hover-color;
+            
+                    }
+        
+                }
+            }
+        }   
+    }
+    .gallery {
+        display: flex;
+        
+        .foto {
+            object-fit: cover;
+            max-height: 200px;
+            width: 100%;
+            padding: 5px;
+        }
+    }
 }
