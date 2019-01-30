@@ -74,7 +74,7 @@ header {
 
 .hero {
     max-width: 100%;
-    min-height: 400px;
+    max-height: auto;
     background-image: url('../images/hero.jpg');
     background-size: cover;
     background-position: center;
@@ -85,8 +85,9 @@ header {
     .content-slogan {
         text-align: center;
         padding-top: 100px;
+        padding-bottom: 100px;
         > h1 {
-            color: white-color;
+            color: $white-color;
             font-size: 50px;
             text-transform: uppercase;
             font-weight: bolder;
@@ -130,9 +131,9 @@ button {
        
     }
 }
- //section about
-.about {
-    .header-about {
+
+section {
+    .header {
         display: flex;
         align-items: center;
         flex-direction: column;
@@ -142,7 +143,7 @@ button {
             font-size: 40px;
             margin-bottom: 0;
             margin-top: 50px;
-        
+
         }
         > p {
             text-transform: uppercase;
@@ -153,6 +154,10 @@ button {
             margin-bottom: 50px;
         }
     }
+}
+ //section about
+.about {
+    
     .paragraph-about {
         > p {
             line-height: 1.5;
@@ -171,28 +176,7 @@ button {
     max-height: auto;
     background-size: cover;
     color: $white-color;
-    .header-services {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-        > h1 {
-            text-transform: uppercase;
-            font-size: 40px;
-            margin-bottom: 0;
-            margin-top: 50px;
-        }
-
-        > p {
-            text-transform: uppercase;
-            font-size: 20px;
-            font-weight: bold;
-            opacity: 0.4;
-            text-shadow: 1px 1px $grey-color;
-            margin-bottom: 50px;
-
-        }
-    }
+    
     .content-services {
         min-height: 250px; 
         display: flex;
@@ -233,28 +217,7 @@ button {
 
 //section  our-project
 .our-projects {
-    .header-our-projects {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-        > h1 {
-            text-transform: uppercase;
-            font-size: 40px;
-            margin-bottom: 0;
-            margin-top: 50px;
-        }
-
-        > p {
-            text-transform: uppercase;
-            font-size: 20px;
-            font-weight: bold;
-            opacity: 0.4;
-            text-shadow: 1px 1px $grey-color;
-            margin-bottom: 50px;
-
-        }
-    }
+    
     .list-our-projects {
         width: 100%;
         display: flex;
@@ -281,7 +244,7 @@ button {
             li {
                 min-width: 100px;
                 padding: 5px;
-                border: 1px solid $grey-color;
+                border: 1px solid #909090;
                 background-color: $light-grey-color;
                 box-shadow: 1px 1px $light-grey-color;
             
@@ -344,6 +307,80 @@ button {
         }
     }
 }
+
+/*SECTION OUR_TEAM*/
+
+.our-team {
+    max-width: 100%;
+    min-height: 600px;
+    background-image: url('../images/our-team-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    color: $white-color;
+
+        .team {
+            display: flex;
+            width: 100%;
+            height: auto;
+
+            .person {
+                background-color: white;
+                margin-right: 10px;
+    
+        
+                img {
+                    width: 200px;
+                    height: 200px;
+                    border-radius: 100%;
+                    margin-top: 40px;
+                }
+
+                h2 {
+                    color: black;
+                    text-transform: uppercase;
+                    line-height: 1px;
+                    opacity: 0.8;
+                    font-weight: 500;
+                }
+
+                p {
+                    color: black;
+                    opacity: 0.7;
+                    font-weight: 400;
+                    
+                }
+
+                .icon-team {
+                    text-align: center;
+                    padding: 10px;
+
+                    .icon-btn {
+                       
+                        border: none;
+                        background-color: #909090;
+	                    border-radius: 50%;
+	                    margin: 5px;
+	                    cursor: pointer;
+                        font-size: 18px;
+                        padding: 20px;
+                        color: white;
+                        text-decoration: none;
+                        text-align: center;
+                        display: inline-block;
+                        &:hover {
+                            background-color: $carrot-hover-color;
+                        }
+                    }
+            
+                }
+
+
+                
+            }
+        }
+}
+
+
 
 @media (min-width: 768px) {
     /* For desktop: */
@@ -413,16 +450,22 @@ button {
         }
     }
 
-    .about {
-        .header-about {
+    section {
+        .header {
+           
             > h1 {
-                font-size: 25px
+                font-size: 25px;
+    
             }
             > p {
                 font-size: 12px;
+    
             }
-
         }
+    }
+
+    .about {
+
         .paragraph-about {
             text-align: center;
             padding: 2px;
@@ -431,17 +474,6 @@ button {
 
     .services {
         
-        .header-services {
-    
-            > h1 {
-                font-size: 25px;
-            }
-    
-            > p {
-                font-size: 12px;
-    
-            }
-        }
         .content-services {
             width: 100%;
             display: flex;
