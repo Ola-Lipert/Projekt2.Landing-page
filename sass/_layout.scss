@@ -10,7 +10,7 @@ body {
 .container {
         width: 100%;
         max-width: 1200px;
-        margin: auto;
+        margin: 0 auto;
     
 }
 
@@ -75,10 +75,13 @@ header {
 .hero {
     max-width: 100%;
     max-height: auto;
-    background-image: url('../images/hero.jpg');
+    background-image: url('../images/hero2.jpg');
     background-size: cover;
     background-position: center;
+    
 }
+
+
 
 .slogan {
     
@@ -154,6 +157,17 @@ section {
             margin-bottom: 50px;
         }
     }
+}
+
+.dots {
+    text-align: center;
+    margin-top: 30px;
+
+        .fa-ellipsis-h {
+            color: $carrot-color;
+            font-size: 60px;
+
+        }
 }
  //section about
 .about {
@@ -378,6 +392,46 @@ section {
                 
             }
         }
+}
+
+/*SECTION OUR_TEAM*/
+.clients {
+    text-align: center;
+
+    .clients-img {
+        width: 100%;
+
+            img {
+                width: 200px;
+                height: 200px;
+                border-radius: 100%;
+
+            }
+            h2 {
+                font-weight: 800;
+                line-height: 1px;
+
+            }
+
+            p {
+                font-weight: 600;
+        
+            }
+    }
+    .clients-opinion {
+        opacity: 0.5;
+        padding: 30px 100px;
+
+            .fa-quote-left {
+                font-size: 25px;
+
+            }
+
+            .clients-paragraph {
+                font-size: 14px;
+                
+            }
+    }
 }
 
 
