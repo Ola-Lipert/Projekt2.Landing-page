@@ -5,6 +5,7 @@
 body {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
+    background-color: $light-grey-color;
 }
 
 .container {
@@ -394,7 +395,7 @@ section {
         }
 }
 
-/*SECTION OUR_TEAM*/
+/*SECTION CLIENTS*/
 .clients {
     text-align: center;
 
@@ -431,6 +432,25 @@ section {
                 font-size: 14px;
                 
             }
+    }
+}
+
+/*SECTION BANNERS*/
+
+.banners {
+    background-color: white;
+    border-bottom: 1px solid $grey-color;
+    border-top: 1px solid $grey-color;
+
+    .banners-img {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+
+        img {
+            height: 200px;
+            width: 200px;
+        }
     }
 }
 
